@@ -1,10 +1,14 @@
 resource "aws_s3_bucket" "media_bucket" {
-  bucket = local.bucket_name
-  acl    = "private"
+  bucket = local.bucket_name  
+}
 
-  versioning {
-    enabled = true
-  }
+resource "aws_s3_bucket_acl" "media_bucket_acl" {
+  bucket = aws_s3_bucket.media_bucket.id
+  acl    = "private"
+}
+
+resource "aws_s3_bucket_cors_configuration" "media_bucket_cors" {
+  bucket = aws_s3_bucket.media_bucket.bucket
 
   cors_rule {
     allowed_headers = ["*"]

@@ -10,9 +10,12 @@
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.4",
     "@rollup/plugin-replace": "^3.0.0",
     "@types/aws-lambda": "^8.10.83",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/jwk-to-pem": "^2.0.1",
     "@types/node": "^16.7.10",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "eslint": "^7.32.0",
@@ -27,6 +30,8 @@
     "typescript": "^4.4.2"
   },
   "dependencies": {
-    "aws-embedded-metrics": "^2.0.4"
+    "aws-embedded-metrics": "^2.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.5"
   }
 }

@@ -1,3 +1,3 @@
 locals {
-  bucket_name = "secure-bucket"
+  bucket_name = "amit-secure-bucket"
 }
