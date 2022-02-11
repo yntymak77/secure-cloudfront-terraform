@@ -15,7 +15,6 @@
     "@rollup/plugin-replace": "^3.0.0",
     "@types/aws-lambda": "^8.10.83",
     "@types/jsonwebtoken": "^8.5.8",
-    "@types/jwk-to-pem": "^2.0.1",
     "@types/node": "^16.7.10",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "eslint": "^7.32.0",
@@ -32,6 +31,6 @@
   "dependencies": {
     "aws-embedded-metrics": "^2.0.4",
     "jsonwebtoken": "^8.5.1",
-    "jwk-to-pem": "^2.0.5"
+    "jwks-rsa": "^1.12.3"
   }
 }
